@@ -26,6 +26,11 @@ html {
 h1 {
 	text-align: center;
 	font-size: 4vw;
+	text-shadow: 2px 2px 5px var(--hookers-green);
+}
+
+p {
+	display: inline;
 }
 
 /* MAIN */
@@ -53,6 +58,16 @@ select {
 	background-color: var(--ash-gray);
 	border: 1px solid var(--dark-slate-gray);
 	padding: 0.5%;
+	margin-bottom: 2vh;
+}
+
+label {
+	display: block;
+}
+
+label[for="k-bau-m"],
+label[for="k-bau-w"] {
+	display: inline;
 }
 
 select {
