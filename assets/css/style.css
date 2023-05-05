@@ -23,11 +23,11 @@ html {
 	color: var(--charcoal);
 }
 
-h1 {
+/* h1 {
 	text-align: center;
 	font-size: 4vw;
 	text-shadow: 2px 2px 5px var(--hookers-green);
-}
+} */
 
 p {
 	display: inline;
@@ -42,11 +42,34 @@ main {
 	justify-content: center;
 }
 
+/* WAIVY H1 */
+.waviy {
+	position: relative;
+	font-size: 3.8vw;
+	text-align: center;
+}
+.waviy span {
+	position: relative;
+	display: inline-block;
+	color: var(--hookers-green);
+	animation: waviy 1s infinite;
+	animation-delay: calc(0.05s * var(--i));
+}
+@keyframes waviy {
+	0%,
+	40%,
+	100% {
+		transform: translateY(0);
+	}
+	20% {
+		transform: translateY(-10px);
+	}
+}
 /* SECTION */
 section {
 	background-color: var(--cambridge-blue);
-	height: 80vh;
-	width: 50vw;
+	min-height: 80vh;
+	width: 55vw;
 	padding: 2%;
 	border-radius: 5%;
 	box-shadow: 10px 10px 10px var(--dark-slate-gray);
@@ -57,29 +80,51 @@ input,
 select {
 	background-color: var(--ash-gray);
 	border: 1px solid var(--dark-slate-gray);
+	color: var(--hookers-green);
+	text-shadow: 0.5px solid var(--cambridge-blue);
 	padding: 0.5%;
 	margin-bottom: 2vh;
+	font-size: 1.2vw;
 }
 
 label {
 	display: block;
+	font-size: 1.8vw;
 }
 
 label[for="k-bau-m"],
-label[for="k-bau-w"] {
+label[for="k-bau-w"],
+.einheit {
 	display: inline;
+	font-size: 1.8vw;
 }
 
 select {
 	width: 100%;
 }
 
+input[type="submit"] {
+	transition: 0.5s ease-out;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+	background-color: var(--dark-slate-gray);
+	color: var(--ash-gray);
+}
+
 /* Table stylen */
+table {
+	width: 100%;
+	margin-bottom: 1vh;
+}
+
 table,
 td {
 	border: 1px solid var(--hookers-green);
+	font-size: 1.8vw;
 }
 
-table {
-	width: 100%;
+td {
+	padding: 1%;
 }

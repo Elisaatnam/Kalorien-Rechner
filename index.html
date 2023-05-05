@@ -10,14 +10,30 @@
 	<body>
 		<main>
 			<section>
-				<h1>Kalorien-Rechner</h1>
+				<div class="waviy">
+					<span style="--i: 1">K</span>
+					<span style="--i: 2">A</span>
+					<span style="--i: 3">L</span>
+					<span style="--i: 4">O</span>
+					<span style="--i: 5">R</span>
+					<span style="--i: 6">I</span>
+					<span style="--i: 7">E</span>
+					<span style="--i: 8">N</span>
+					<span style="--i: 9">R</span>
+					<span style="--i: 10">E</span>
+					<span style="--i: 11">C</span>
+					<span style="--i: 12">H</span>
+					<span style="--i: 13">N</span>
+					<span style="--i: 14">E</span>
+					<span style="--i: 15">R</span>
+				</div>
 				<form onsubmit="calcCal(); return false">
 					<label for="groesse">Körpergröße</label>
 					<input type="number" id="groesse" placeholder="174" required />
-					<p>cm</p>
+					<p class="einheit">cm</p>
 					<label for="alter">Alter</label>
 					<input type="number" id="alter" placeholder="28" required />
-					<p>Jahre</p>
+					<p class="einheit">Jahre</p>
 					<label for="gewicht">Gewicht</label>
 					<input
 						type="number"
@@ -26,7 +42,7 @@
 						placeholder="78,2"
 						required
 					/>
-					<p>kg</p>
+					<p class="einheit">kg</p>
 					<label for="k-bau">Körperbau</label>
 					<div id="k-bau">
 						<input type="radio" id="k-bau-w" name="k-bau" value="w" checked />
@@ -75,7 +91,7 @@
 					</tr>
 				</table>
 				<p>
-					Beachte, dass der ausgegebene Wert eine Schätzung deines Bedarfs
+					*Beachte, dass der ausgegebene Wert eine Schätzung deines Bedarfs
 					darstellt. Je nach individuellen Voraussetzungen, kann dein
 					Kalorienbedarf etwas abweichen.
 				</p>
