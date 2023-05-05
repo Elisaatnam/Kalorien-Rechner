@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kalorien-Rechner</title>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<main>
+			<section>
+				<h1>Kalorien-Rechner</h1>
+				<form onsubmit="calcCal(); return false">
+					<label for="groesse">Körpergröße</label>
+					<input type="number" id="groesse" placeholder="174" required />
+					<p>cm</p>
+					<label for="alter">Alter</label>
+					<input type="number" id="alter" placeholder="28" required />
+					<p>Jahre</p>
+					<label for="gewicht">Gewicht</label>
+					<input
+						type="number"
+						id="gewicht"
+						step="0.01"
+						placeholder="78,2"
+						required
+					/>
+					<p>kg</p>
+					<label for="k-bau">Körperbau</label>
+					<div id="k-bau">
+						<input type="radio" id="k-bau-w" name="k-bau" value="w" checked />
+						<label for="k-bau-w">Weiblich</label>
+						<input type="radio" id="k-bau-m" name="k-bau" value="m" />
+						<label for="k-bau-m">Männlich</label>
+					</div>
+					<label for="aktivitaet">Arbeits- und Freizeitaktivität</label>
+					<select id="aktivitaet" name="pal-faktor">
+						<option value="0.95">Schlafen</option>
+						<option value="1.2">Nur Sitzen oder Liegen</option>
+						<option value="1.5">
+							Ausschließlich sitzende Tätigkeit mit wenig oder keiner
+							körperlichen Aktivität in der Freizeit, z.B. Büroarbeit
+						</option>
+						<option value="1.7">
+							Sitzende Tätigkeit mit zeitweilig gehender oder stehender
+							Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten,
+							Kraftfahrer
+						</option>
+						<option value="1.9">
+							Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer,
+							Kellner, Handwerker, Mechaniker, Hausfrauen
+						</option>
+						<option value="2.2">
+							Körperlich anstrengende berufliche Arbeit
+						</option>
+					</select>
+					<input type="submit" value="Berechnen" />
+				</form>
+				<table>
+					<tr>
+						<td></td>
+						<td>kcal</td>
+						<td>kJ</td>
+					</tr>
+					<tr>
+						<td>Grundumsatz</td>
+						<td class="output-gu-kcal"></td>
+						<td class="output-gu-kj"></td>
+					</tr>
+					<tr>
+						<td>Gesamtumsatz</td>
+						<td class="output-gesu-kcal"></td>
+						<td class="output-gesu-kj"></td>
+					</tr>
+				</table>
+				<p>
+					Beachte, dass der ausgegebene Wert eine Schätzung deines Bedarfs
+					darstellt. Je nach individuellen Voraussetzungen, kann dein
+					Kalorienbedarf etwas abweichen.
+				</p>
+			</section>
+		</main>
+		<footer></footer>
+		<script type="text/javascript" src="./assets/js/main.js"></script>
+	</body>
+</html>

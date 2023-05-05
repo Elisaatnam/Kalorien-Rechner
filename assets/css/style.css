@@ -1,0 +1,70 @@
+@font-face {
+	font-family: Indie;
+	src: url(../fonts/IndieFlower-Regular.ttf);
+}
+
+:root {
+	--ash-gray: #cad2c5ff;
+	--cambridge-blue: #84a98cff;
+	--hookers-green: #52796fff;
+	--dark-slate-gray: #354f52ff;
+	--charcoal: #2f3e46ff;
+}
+
+/* GLOBAL SETTINGS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Indie, sans-serif;
+	color: var(--charcoal);
+}
+
+h1 {
+	text-align: center;
+	font-size: 4vw;
+}
+
+/* MAIN */
+main {
+	min-height: 100vh;
+	padding: 10vh 0;
+	background-color: var(--ash-gray);
+	display: flex;
+	justify-content: center;
+}
+
+/* SECTION */
+section {
+	background-color: var(--cambridge-blue);
+	height: 80vh;
+	width: 50vw;
+	padding: 2%;
+	border-radius: 5%;
+	box-shadow: 10px 10px 10px var(--dark-slate-gray);
+}
+
+/* FORM , INPUT, LABLELS*/
+input,
+select {
+	background-color: var(--ash-gray);
+	border: 1px solid var(--dark-slate-gray);
+	padding: 0.5%;
+}
+
+select {
+	width: 100%;
+}
+
+/* Table stylen */
+table,
+td {
+	border: 1px solid var(--hookers-green);
+}
+
+table {
+	width: 100%;
+}
