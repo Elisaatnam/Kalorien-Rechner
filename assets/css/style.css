@@ -82,6 +82,7 @@ select {
 	padding: 0.5%;
 	margin-bottom: 2vh;
 	font-size: 1.2vw;
+	border-radius: 10px;
 }
 
 label {
@@ -118,6 +119,7 @@ input[type="submit"]:hover {
 table {
 	width: 100%;
 	margin-bottom: 1vh;
+	border-radius: 10px;
 }
 
 table,
