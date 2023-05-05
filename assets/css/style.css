@@ -23,12 +23,6 @@ html {
 	color: var(--charcoal);
 }
 
-/* h1 {
-	text-align: center;
-	font-size: 4vw;
-	text-shadow: 2px 2px 5px var(--hookers-green);
-} */
-
 p {
 	display: inline;
 }
@@ -36,7 +30,7 @@ p {
 /* MAIN */
 main {
 	min-height: 100vh;
-	padding: 10vh 0;
+	padding: 2vh 0;
 	background-color: var(--ash-gray);
 	display: flex;
 	justify-content: center;
@@ -46,8 +40,11 @@ main {
 .waviy {
 	position: relative;
 	font-size: 3.8vw;
+	font-weight: 700;
 	text-align: center;
+	text-shadow: 1px 1px 5px var(--hookers-green);
 }
+
 .waviy span {
 	position: relative;
 	display: inline-block;
@@ -97,6 +94,10 @@ label[for="k-bau-w"],
 .einheit {
 	display: inline;
 	font-size: 1.8vw;
+}
+
+label[for="k-bau-w"] {
+	margin-right: 1vw;
 }
 
 select {
