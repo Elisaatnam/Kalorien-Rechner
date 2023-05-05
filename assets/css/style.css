@@ -105,11 +105,13 @@ select {
 	width: 100%;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
 	transition: 0.5s ease-out;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="reset"]:hover {
 	cursor: pointer;
 	background-color: var(--dark-slate-gray);
 	color: var(--ash-gray);
